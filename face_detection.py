@@ -23,8 +23,7 @@ while True:
                 cv.rectangle(frame, (x, y), (x+w, y+h),
                              (0, 150, 0), thickness=2)
 
-                cv.imwrite('./Images/image_'+str(count) +
-                           '.jpg', frame[y: y+h, x: x+w])
+                cv.imwrite(f'./Images/image_{count}.jpg', frame[y: y+h, x: x+w])
                 count += 1
 
             cv.putText(frame, f"{len(faces)} face(s) detected", (10, 30),
