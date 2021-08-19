@@ -3,10 +3,9 @@ import glob
 import numpy as np
 
 # Trained face detection data
-face_detection_data = cv.CascadeClassifier(
-    '../Datasets/face_detection_data.xml')
+face_detection_data = cv.CascadeClassifier('face_detection_data.xml')
 
-img = cv.VideoCapture(0)
+img = cv.VideoCapture(0)    #Capture your own image
 count = 1
 imagesCaptured = []
 
